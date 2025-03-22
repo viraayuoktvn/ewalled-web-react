@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Home() {
+function HomePage() {
     const [transactions, setTransactions] = useState([
         { date: "20:10 - 30 June 2022", type: "Transfer", from: "Sendy", description: "Fore Coffee", amount: "- 75.000,00" },
         { date: "20:10 - 30 June 2022", type: "Topup", from: "", description: "Topup from Bank Transfer", amount: "+ 1.000.000,00" },
@@ -59,13 +59,15 @@ function Home() {
             </div>
 
             {/* Filter & Sorting */}
-            <div className="flex justify-between items-center mt-6 p-4 rounded-lg shadow-sm">
+            <div className="flex justify-between items-center mt-6 p-4 rounded-lg">
                 <input type="text" placeholder="Search" className="p-3 border rounded-lg w-1/3 shadow-sm focus:outline-none" />
-                <div className="flex gap-4">
+                <div className="flex gap-4 items-center">
+                    <label className="text-gray-500">Show</label>
                     <select className="p-3 border rounded-lg shadow-sm text-gray-500">
                         <option>Last 10 transactions</option>
                         <option>Last 20 transactions</option>
                     </select>
+                    <label className="text-gray-500">Sort by</label>
                     <select className="p-3 border rounded-lg shadow-sm text-gray-500">
                         <option>Date</option>
                         <option>Amount</option>
@@ -113,7 +115,6 @@ function Home() {
             </div>
         </div>
     )
-  }
+}
   
-  export default Home
-  
+export default HomePage

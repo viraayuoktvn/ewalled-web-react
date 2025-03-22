@@ -1,18 +1,11 @@
-import { StrictMode } from 'react'
+// import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import Home from './pages/Home'
-import Navbar from './components/navbar'
-import Register from './pages/Register'
-import Login from './pages/Login'
-import Transfer from './pages/Transfer'
-import Topup from './pages/Topup'
-// import App from './App.jsx'
+import App from './App'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Navbar/>
-    <Topup/>
-    {/* <Transfer/> */}
-  </StrictMode>,
+  <BrowserRouter>
+    <App/>
+  </BrowserRouter>,
 )
