@@ -12,7 +12,7 @@ function Home() {
         { date: "20:10 - 30 June 2022", type: "Topup", from: "", description: "Topup from Bank Transfer", amount: "+ 1.000.000,00" },
         { date: "20:10 - 30 June 2022", type: "Transfer", from: "Spongebob", description: "Fore Coffee", amount: "- 75.000,00" },
         { date: "20:10 - 30 June 2022", type: "Topup", from: "", description: "Topup from Bank Transfer", amount: "+ 1.000.000,00" },
-    ]);
+    ])
 
     return (
         // Header

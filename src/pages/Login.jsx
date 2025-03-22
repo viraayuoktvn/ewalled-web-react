@@ -22,7 +22,7 @@ function Login() {
         {/* Right Section - Image */}
         <div className="w-1/2 h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/src/assets/logreg.svg')" }}></div>
       </div>
-    );
+    )
   }
   
   export default Login;
