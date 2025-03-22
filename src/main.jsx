@@ -6,11 +6,13 @@ import Navbar from './components/navbar'
 import Register from './pages/Register'
 import Login from './pages/Login'
 import Transfer from './pages/Transfer'
+import Topup from './pages/Topup'
 // import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar/>
-    <Transfer/>
+    <Topup/>
+    {/* <Transfer/> */}
   </StrictMode>,
 )
