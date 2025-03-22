@@ -104,17 +104,13 @@ function Home() {
             </div>
 
             {/* Pagination */}
-            <div className="flex items-center mt-6 gap-2">
-                <button className="px-4 py-2 bg-gray-300 rounded-lg">First</button>
-                <div className="flex gap-2">
-                    <button className="px-4 py-2 bg-blue-500 text-white rounded-lg">1</button>
-                    <button className="px-4 py-2 bg-gray-300 rounded-lg">2</button>
-                    <button className="px-4 py-2 bg-gray-300 rounded-lg">3</button>
-                </div>
-                <button className="px-4 py-2 bg-gray-300 rounded-lg">Next</button>
+            <div className="flex justify-start items-center mt-6 border rounded-lg w-fit mx-auto overflow-hidden">
+                <button className="px-4 py-2 bg-gray-200 text-gray-500 cursor-not-allowed">First</button>
+                <button className="px-4 py-2 bg-white border-x">1</button>
+                <button className="px-4 py-2 bg-blue-500 text-white">2</button>
+                <button className="px-4 py-2 bg-white border-x">3</button>
+                <button className="px-4 py-2 bg-white">Next</button>
             </div>
-
-
         </div>
     )
   }
