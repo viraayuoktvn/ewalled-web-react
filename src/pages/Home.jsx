@@ -16,7 +16,7 @@ function Home() {
 
     return (
         // Header
-        <div className=" px-10 py-7 w-xl mx-7 my-3 font-['Open_Sans'] items-center">
+        <div className="font-['Open_Sans'] px-10 py-7 w-xl mx-7 my-3 font-['Open_Sans'] items-center">
             <div className="flex justify-between items-center">
                 <div>
                     <h1 className="text-3xl font-bold">Good Morning, Chelsea</h1>
@@ -59,7 +59,7 @@ function Home() {
             </div>
 
             {/* Filter & Sorting */}
-            <div className="flex justify-between items-center mt-6 bg-gray-100 p-4 rounded-lg shadow-sm">
+            <div className="flex justify-between items-center mt-6 p-4 rounded-lg shadow-sm">
                 <input type="text" placeholder="Search" className="p-3 border rounded-lg w-1/3 shadow-sm focus:outline-none" />
                 <div className="flex gap-4">
                     <select className="p-3 border rounded-lg shadow-sm text-gray-500">
