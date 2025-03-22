@@ -108,10 +108,10 @@ function HomePage() {
             {/* Pagination */}
             <div className="flex justify-start items-center mt-6 border rounded-lg w-fit mx-auto overflow-hidden">
                 <button className="px-4 py-2 bg-gray-200 text-gray-500 cursor-not-allowed">First</button>
-                <button className="px-4 py-2 bg-white border-x">1</button>
-                <button className="px-4 py-2 bg-blue-500 text-white">2</button>
-                <button className="px-4 py-2 bg-white border-x">3</button>
-                <button className="px-4 py-2 bg-white">Next</button>
+                <button className="px-4 py-2 bg-white border-x text-[#0061FF] font-bold">1</button>
+                <button className="px-4 py-2 bg-blue-500 text-white font-bold">2</button>
+                <button className="px-4 py-2 bg-white border-x text-[#0061FF] font-bold">3</button>
+                <button className="px-4 py-2 bg-white text-[#0061FF] font-bold">Next</button>
             </div>
         </div>
     )
