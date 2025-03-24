@@ -14,9 +14,11 @@ function HomePage() {
         { date: "20:10 - 30 June 2022", type: "Topup", from: "", description: "Topup from Bank Transfer", amount: "+ 1.000.000,00" },
     ])
 
+    const [isBalanceHidden, setIsBalanceHidden] = useState(false);
+
     return (
         // Header
-        <div className="font-['Open_Sans'] px-10 py-7 w-xl mx-7 my-3 font-['Open_Sans'] items-center">
+        <div className="font-['Open_Sans'] px-10 py-7 w-xl mx-7 my-3 items-center">
             <div className="flex justify-between items-center">
                 <div>
                     <h1 className="text-3xl font-bold">Good Morning, Chelsea</h1>
@@ -41,8 +43,8 @@ function HomePage() {
                     <div>
                         <p className="text-xl">Balance</p>
                         <div className="flex">
-                            <h2 className="text-2xl font-bold">Rp 10.000.000,00</h2>
-                            <button>
+                            <h2 className="text-2xl font-bold">{isBalanceHidden ? "••••••••••••••••••••" : "Rp 10.000.000,00"}</h2>
+                            <button onClick={() => setIsBalanceHidden(!isBalanceHidden)}>
                                 <img src="src\assets\view.svg" className="px-10"></img>
                             </button>
                         </div>
