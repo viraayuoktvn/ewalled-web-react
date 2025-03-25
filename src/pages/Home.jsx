@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
     const [transactions, setTransactions] = useState([
@@ -15,6 +16,7 @@ function HomePage() {
     ])
 
     const [isBalanceHidden, setIsBalanceHidden] = useState(false);
+    const navigate = useNavigate();
 
     return (
         // Header
@@ -50,12 +52,12 @@ function HomePage() {
                         </div>
                     </div>
                     <div className="flex gap-5">
-                        <button>
-                            <img src="src\assets\plus.svg" className="bg-[#0061FF] text-white p-3 rounded-[10px] text-xl shadow-md shadow-[#19918F]"></img>
-                        </button>
-                        <button>
-                            <img src="src\assets\share.svg" className="bg-[#0061FF] text-white p-3 rounded-[10px] text-xl shadow-md shadow-[#19918F]"></img>
-                        </button>
+                    <button onClick={() => navigate("/topup")}>
+                        <img src="src/assets/plus.svg" className="bg-[#0061FF] text-white p-3 rounded-[10px] text-xl shadow-md shadow-[#19918F]" />
+                    </button>
+                    <button onClick={() => navigate("/transfer")}>
+                        <img src="src/assets/share.svg" className="bg-[#0061FF] text-white p-3 rounded-[10px] text-xl shadow-md shadow-[#19918F]" />
+                    </button>
                     </div>
                 </div>
             </div>
